@@ -18,7 +18,7 @@ int main()
 }
 /********************************
 OUTPUT:
-a's  value is now 1
+ a's  value is now 1
  a's value is now 2
  a's value is now 2
  a's value is now 2
