@@ -1,0 +1,32 @@
+EXP5:File handling program in python
+CODE:
+#taking input as the random text from user
+print("Enter some text::\n")
+while str !="@":
+    file1=open("text.txt","a")
+    str=input()
+    if str !="@":
+        #writing text into the file
+        file1.write(str+"\n")
+        file1.close
+    
+#printing the content from the file
+print("\nContent in the file is::\n")
+file1=open("text.txt","r")
+file1.seek(0,1)
+filetxt=file1.read()
+print(file.txt)
+file1.close
+
+OUTPUT:
+Enter some text::
+
+tomorrow is mystery.
+yesterday is history.
+today is god gift.
+
+Content in the file is::
+
+tomorrow is mystery.
+yesterday is history.
+today is god gift.

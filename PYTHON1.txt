@@ -1,0 +1,34 @@
+EXP1: Program to perform arithmetic operations by accepting values from user 
+
+CODE: 
+
+x = int(input("Type a number: "))
+y = int(input("Type another number: "))
+
+sum = x + y 
+sub = x - y
+mul = x * y
+div = x / y
+modu = x % y
+expo = x ** y
+
+print("\nThe sum is: ", sum)
+print("The difference is: ", sub)
+print("The multiplication is: ", mul)
+print("The divison is: ", div)
+print("The modulo is: ", modu)
+print("The exponential is: ", expo)
+
+
+
+
+OUTPUT:
+Type a number: 2
+Type another number: 4
+
+The sum is:  6
+The difference is:  -2
+The multiplication is:  8
+The divison is:  0.5
+The modulo is:  2
+The exponential is:  16

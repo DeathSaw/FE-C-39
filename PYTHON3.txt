@@ -1,0 +1,46 @@
+EXP3:To explore basic data types of python like strings, lists, dictionaries and tuples.
+
+CODE:
+#list
+l=[]
+l.append(5)
+l.append(10)
+print("adding 5 and 10 in list",l)
+l.pop()
+print("popped one element from list",l)
+print()
+
+#set
+s=set()
+s.add(5)
+s.add(10)
+print("adding 5 and 10 in set",s)
+s.remove
+print("removing 5 from set",s)
+print()
+
+#tuple
+t=tuple(l)
+print("tuple",t)
+print()
+
+#dictionary
+d={}
+d[5]="five"
+d[10]="ten"
+print("dictionary",d)
+del d[10]
+print("dictionary",d)
+
+OUTPUT:
+
+adding 5 and 10 in list [5, 10]
+popped one element from list [5]
+
+adding 5 and 10 in set {10, 5}
+removing 5 from set {10, 5}
+
+tuple (5,)
+
+dictionary {5: 'five', 10: 'ten'}
+dictionary {5: 'five'}

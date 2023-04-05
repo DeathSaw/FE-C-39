@@ -1,0 +1,59 @@
+EXP6: Serialization in python using pickle
+CODE:
+Emp.py
+class Employee:
+    def __init__(self,id, name, sal):
+        self.id = id
+        self.name = name
+        self.sal = sal
+        
+    def display(self):
+        print("Employee ID is: ", self.id)
+        print("Employee name is: ", self.name)
+        print("Employee salary is: ", self.sal)
+
+main.py
+import Emp, pickle
+f = open ("emp.dat", 'wb')
+n = int(input("Enter total number of employees "))
+for i in range(n):
+    id = int(input("Enter employee id: "))
+    name = input("Enter employee name: ")
+    sal = float(input("Enter salary: "))
+    e = Emp.Employee(id, name, sal)
+    pickle.dump(e,f)
+f.close()
+f=open("emp.dat", 'rb')
+print("Employee details: \n")
+while True:
+    try:
+        obj=pickle.load(f)
+        obj.display()
+    except EOFError:
+        print("End of file reached")
+        break;
+f.close()
+
+OUTPUT:
+Enter total number of employees 3
+Enter employee id: 1
+Enter employee name: abc
+Enter salary: 1000
+Enter employee id: 2
+Enter employee name: xyz
+Enter salary: 5000
+Enter employee id: 3
+Enter employee name: pqr
+Enter salary: 3000
+Employee details: 
+
+Employee ID is:  1
+Employee name is:  abc
+Employee salary is:  1000.0
+Employee ID is:  2
+Employee name is:  xyz
+Employee salary is:  5000.0
+Employee ID is:  3
+Employee name is:  pqr
+Employee salary is:  3000.0
+End of file reached

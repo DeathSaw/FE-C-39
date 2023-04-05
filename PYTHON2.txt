@@ -1,0 +1,47 @@
+EXP2: To implement conditional and loop statements in python
+
+(A)
+CODE:
+val=int(input('Enter the number'))
+print(val)
+if(val>5):
+ print('The Entered no. is gearter than 5')
+else:
+ print('The Entered no. is less than 5')
+
+OUTPUT:
+Enter the number2
+2
+The Entered no. is less than 5
+
+(B)
+CODE:
+val1=str(input('Enter the character '))
+print(val1)
+
+if val1 == "a":
+  print('char entered a')
+elif val1 == "b":
+  print('char entered b')
+elif val1=="c":
+    print('char entered c')
+else:
+   print("not a,b,c")
+
+OUTPUT:
+Enter the charactera
+a
+
+char entered a
+
+(C)
+CODE:
+for x in range(1,6):
+    print(x)
+
+OUTPUT:
+1
+2
+3
+4
+5
